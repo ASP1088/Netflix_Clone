@@ -66,50 +66,6 @@
 }
 
 // Login Page
-<<<<<<< HEAD
-.login{
-  height: 100vh;
-  overflow: hidden;
-
-  .holder{
-    padding: 60px 68px 40px;
-    background-color: black;
-    min-height: 460px;
-    width: 450px;
-    position: absolute;
-    z-index: 1;
-    margin-top: 100px;
-    left: calc(50% - 225px);
-
-    input{
-      background-color: #333;
-      border: 0;
-      margin-bottom: 20px;
-      color: #fff;
-    }
-  }
-  .shadow{
-    background-color: rgba(0,0,0,.4);
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
-  img{
-    max-width: 100%;
-  }
-  .login-form-other{
-    .login-signup-now {
-      color: #737373;
-      font-size: 16px;
-      font-weight: 500;
-      margin-top: 16px;
-      a {
-        color: #fff;
-      }
-    }
-  }
-=======
 .login {
   display: flex;
   justify-content: center;
@@ -223,7 +179,6 @@
 
 .concord-img {
   display: none; /* Image background is set via CSS, so we hide this */
->>>>>>> master
 }
 
 // Banner
