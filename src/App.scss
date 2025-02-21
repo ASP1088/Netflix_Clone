@@ -66,48 +66,119 @@
 }
 
 // Login Page
-.login{
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  overflow: hidden;
+  width: 100vw;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/6e32b96a-d4be-4e44-a19b-1bd2d2279b51/ee068656-14b9-4821-89b4-53b4937d9f1c/IN-en-20220516-popsignuptwoweeks-perspective_alpha_website_small.jpg")
+      no-repeat center center/cover;
+  color: white;
+  font-family: Arial, sans-serif;
+}
 
-  .holder{
-    padding: 60px 68px 40px;
-    background-color: black;
-    min-height: 460px;
-    width: 450px;
-    position: absolute;
-    z-index: 1;
-    margin-top: 100px;
-    left: calc(50% - 225px);
+.holder {
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 12px;
+  padding: 40px;
+  width: 500px;
+  max-width: 90%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
 
-    input{
-      background-color: #333;
-      border: 0;
-      margin-bottom: 20px;
-      color: #fff;
-    }
-  }
-  .shadow{
-    background-color: rgba(0,0,0,.4);
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
-  img{
-    max-width: 100%;
-  }
-  .login-form-other{
-    .login-signup-now {
-      color: #737373;
-      font-size: 16px;
-      font-weight: 500;
-      margin-top: 16px;
-      a {
-        color: #fff;
-      }
-    }
-  }
+.holder h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.holder form {
+  display: flex;
+  flex-direction: column;
+}
+
+.holder input.form-control {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.holder input.form-control:focus {
+  outline: none;
+  border: 2px solid #e50914;
+}
+
+.holder button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.holder button:hover {
+  background-color: #f40612;
+  transform: scale(1.02);
+}
+
+.holder .form-check {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.holder .form-check label {
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.holder a {
+  color: #0071eb;
+  text-decoration: none;
+}
+
+.holder a:hover {
+  text-decoration: underline;
+}
+
+.login-form-other {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.login-form-other small {
+  font-size: 13px;
+  color: #b3b3b3;
+}
+
+.login-form-other small a {
+  color: #0071eb;
+}
+
+.shadow {
+  display: none; /* Remove unnecessary shadow div */
+}
+
+.concord-img {
+  display: none; /* Image background is set via CSS, so we hide this */
 }
 
 // Banner
